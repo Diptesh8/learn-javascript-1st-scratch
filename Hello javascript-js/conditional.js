@@ -13,9 +13,17 @@ else {
 }
 const salary = 25000;
 const height = 6;
-if(salary > 20000 || height > 7){
-    console.log("aso baba kubul tomar biye hoobe ");
+const isUpsc = true ;
+// if(salary > 20000 || height > 7){
+//     console.log("aso baba kubul tomar biye hoobe ");
+// }
+// else{
+//     console.log("baba ei jonme tomar r amr mayer sathe biye holo na");
+// }
+// --------------------COMPLEX CONDITION----------------------
+if((salary > 24000 && height > 7) || isUpsc == true ){
+    console.log("tomar 14 gusti raji");
 }
 else{
-    console.log("baba ei jonme tomar r amr mayer sathe biye holo na");
+    console.log("tumi kumari hoye more jabe")
 }
