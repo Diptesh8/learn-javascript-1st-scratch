@@ -3,12 +3,14 @@ const service = {
 
     salary: 12000,
 
-    color: "green",
+    color : {
+        school: "pink",
+        uniform: "blue and white",
 
-    name: "orientaion"
-
+    } 
+ 
 }
 console.log(service);
-console.log(service.color)
+console.log(service.color.uniform)
 const money = service.salary;
 console.log(money)
