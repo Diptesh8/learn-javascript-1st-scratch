@@ -6,4 +6,5 @@ const computer = {
 }
 
 const value = Object.values(computer);
+computer.brand =" lenevo"
 console.log(value)
