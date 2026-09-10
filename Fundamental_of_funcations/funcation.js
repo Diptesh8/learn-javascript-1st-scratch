@@ -6,4 +6,9 @@ function  brushTeeth(){
 }
 
 brushTeeth();
+
+brushTeeth();
+
+brushTeeth();
+
 brushTeeth();
