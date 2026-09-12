@@ -10,3 +10,14 @@ function inchiFeet(inch){
 const suvoHeight= "53";
 const answerFeet= inchiFeet(suvoHeight);
 console.log(answerFeet);
+
+// miles to kilomiter using function -----------------------------------------
+
+function mileKilomiter(mile){
+
+    const kilomiter =mile * 1.60934;
+    return kilomiter;
+}
+const mile= "13";
+const kilo = mileKilomiter(mile);
+console.log(kilo);
