@@ -17,5 +17,23 @@ function number(num1){
       return  num1 / 2;
     }
 }
-const num= number(8);
-console.log(num);
+// const num= number(8);
+// console.log(num);
+
+// Task-3  write a function called make_avg()which will take an array of integers and the size of that array and return the average of those values
+
+function avg(numbers) {
+    let sum = 0;
+    let average = 0;
+    const lent =numbers.length;
+    for(const num of numbers){
+    sum =sum + num
+    average= sum / lent;
+    }
+
+    return average;
+    
+}
+const numbers=[3,5,7,8,5,8,7];
+const final = avg(numbers);
+console.log(final);
