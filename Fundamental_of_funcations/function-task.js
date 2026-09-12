@@ -34,6 +34,23 @@ function avg(numbers) {
     return average;
     
 }
-const numbers=[3,5,7,8,5,8,7];
-const final = avg(numbers);
-console.log(final);
+// const numbers=[3,5,7,8,5,8,7];
+// const final = avg(numbers);
+// console.log(final);
+
+// Task-4 write a function called count_zer0() which will take  a binary string (binary string is a string which is consist of only 0 and 1)as parameter and count how many 0's  are there in that string.
+
+function numbers(numbers){
+    let variable =0 ;
+    for(const sonkha of numbers){
+        if(sonkha === "0"){
+          variable++
+        }
+    }
+    return variable;
+
+
+}
+const string ="10010101001";
+const count =numbers(string);
+console.log(count)
