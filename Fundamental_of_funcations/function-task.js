@@ -44,13 +44,13 @@ function numbers(numbers){
     let variable =0 ;
     for(const sonkha of numbers){
         if(sonkha === "0"){
-          variable++
+          variable= variable + 1;
         }
     }
     return variable;
 
 
 }
-const string ="10010101001";
+const string ="100101010010010";
 const count =numbers(string);
 console.log(count)
