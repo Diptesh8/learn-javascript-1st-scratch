@@ -14,4 +14,4 @@ function sumOfNumbers(numbers){
 }
 const numbs = [4,6,8,9,6,8,5,4,9,10];
 const m = sumOfNumbers(numbs);
-console.log("sum of number is",m);
+console.log("sum of number is",m);   

@@ -52,5 +52,7 @@ function numbers(numbers){
 
 }
 const string ="100101010010010";
-const count =numbers(string);
-console.log(count)
+// const count =numbers(string);
+// console.log(count)
+
+// Task-5 write a function called odd_even() which takes an integer value and tells whether this value is even or odd. if evev return even.if odd return odd
