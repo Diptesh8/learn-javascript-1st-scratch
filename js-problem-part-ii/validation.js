@@ -26,5 +26,18 @@ function fullname(first,second){
 
 }
 
-const names= fullname("batash", );
-console.log(names);
+// const names= fullname("batash", );
+// console.log(names);
+
+// enter a valid object otherwise show error---------------
+
+function getprice(product){
+    if(typeof product !== "object"){
+        return "error"
+    };
+    const price =product.price;
+    return price;
+}
+// const price = getprice({name:"pit chulkani",color:"yellow",price:126,size:"5inchi"})
+const price =getprice(6);
+console.log(price);
