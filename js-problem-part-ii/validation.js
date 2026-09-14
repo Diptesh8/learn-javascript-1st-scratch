@@ -26,5 +26,5 @@ function fullname(first,second){
 
 }
 
-const names= fullname("batash", "raja");
+const names= fullname("batash", );
 console.log(names);
