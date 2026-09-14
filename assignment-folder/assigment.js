@@ -35,17 +35,25 @@ function checkName(name){
 function deleteInvalids(array){
     let finalArray=[];
     if(Array.isArray(array) !== true){
-        console.log("input a valid array do not try anything");
-        return;
+        return "input a valid array do not try anything";
     }
 for(const num of array){
   if(typeof num === "number" && !isNaN(num)){
   finalArray.push(num);
-//   console.log(finalArray);
   }
 }
 return finalArray;
 }
-const outpu= deleteInvalids([18,13,-7,NaN,"unvalid",87]);
-console.log(outpu);
+// const outpu= deleteInvalids([18,13,-7,NaN,"unvalid",87]);
+// console.log(outpu);
 
+// problem4:= Make a great password making function for kalimuddind chacha---------------
+
+function password(passwords){
+         const makePassword =passwords.siteName[0].toUpperCase() + passwords.siteName.slice(1) + "#" + passwords.name + "@" + passwords.birthYear;
+return makePassword;
+    
+    
+}
+const out=password({ name:"dip",birthYear:1999,siteName:"google"});
+console.log(out);
