@@ -39,5 +39,20 @@ function getprice(product){
     return price;
 }
 // const price = getprice({name:"pit chulkani",color:"yellow",price:126,size:"5inchi"})
-const price =getprice(6);
-console.log(price);
+// const price =getprice([8]);
+// console.log(price);
+
+// new trick unlock and javascript e array is one type of object----------
+
+function get(numbers){
+    if(Array.isArray(numbers) !== true){
+        return"enter valid array "
+
+    }
+    // console.log(Array.isArray(numbers));
+    // console.log(typeof numbers);
+    const second =numbers[1];
+    return second;
+}
+const output =get(9);
+console.log(output);
