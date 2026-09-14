@@ -11,7 +11,7 @@ function totalPrice(costs){
     for(const cost of costs){
         sum =  cost.price * cost.quainty;
         total = total + sum;
-    
+        
     }
     return total;
 

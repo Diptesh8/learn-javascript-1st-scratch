@@ -33,5 +33,5 @@ function calculator(a ,b,operator){
            
 }
 
-const rehave =calculator(5,6,"devide");
+const rehave =calculator(5,6,"addition");
 console.log(rehave);
