@@ -50,10 +50,20 @@ return finalArray;
 // problem4:= Make a great password making function for kalimuddind chacha---------------
 
 function password(passwords){
-         const makePassword =passwords.siteName[0].toUpperCase() + passwords.siteName.slice(1) + "#" + passwords.name + "@" + passwords.birthYear;
+    if(typeof passwords !=="object" || passwords === null){
+        return "invalid";
+    } 
+     else if( typeof passwords.birthYear !== "number"){
+            return "invalid";
+
+            }
+      else if(String(passwords.birthYear).length !== 4){
+         return "invalid";
+      }
+
+         const makePassword =passwords.siteName[0].toUpperCase() + passwords.siteName.slice(1)  + "#" + passwords.name + "@" + passwords.birthYear;
 return makePassword;
-    
-    
+       
 }
-const out=password({ name:"dip",birthYear:1999,siteName:"google"});
+const out=password({ name:"dip",birthYear:2090,siteName:"google"});
 console.log(out);
