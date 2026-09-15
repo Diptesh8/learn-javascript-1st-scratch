@@ -50,7 +50,10 @@ return finalArray;
 // problem4:= Make a great password making function for kalimuddind chacha---------------
 
 function password(passwords){
-    if(typeof passwords !=="object" || passwords === null){
+    if(typeof passwords !=="object" || passwords === null || 
+        passwords.name === undefined || 
+        passwords.birthYear === undefined || 
+        passwords.siteName === undefined){
         return "invalid";
     } 
      else if( typeof passwords.birthYear !== "number"){
@@ -67,3 +70,5 @@ return makePassword;
 }
 const out=password({ name:"dip",birthYear:2090,siteName:"google"});
 console.log(out);
+
+// problem5:=
