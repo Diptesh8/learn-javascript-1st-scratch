@@ -17,10 +17,23 @@
             <li>england</li>
             <li>briten</li>
         </ul>
+        <ol>
+            <li>apple</li>
+            <li>banana</li>
+            <li>pineapple</li>
+            <li>litchi</li>
+        </ol>
     </main>
     <script src="dom.js"></script>
     <script>
-        console.log("adding js inside the html file");
+       const liCollection = document.getElementsByTagName('li');
+    for(const li of liCollection){
+        console.log(li);
+    }
+    const h1collection =document.getElementsByTagName("h1");
+    for(const h1 of h1collection){
+        console.log(h1);
+    }
     </script>
 </body>
 </html>
