@@ -5,3 +5,5 @@ for(const section of sections){
     section.style.marginBottom ="8px";
     section.style.borderRadius = "15px";
 }
+const spaceId = document.getElementById("fruits-col");
+spaceId.style.backgroundColor ="yellow";
