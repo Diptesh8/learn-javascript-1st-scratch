@@ -4,3 +4,7 @@ h1{
 ul.li{
     color: dodgerblue;
 }
+li{
+    color: darkorange;
+    background-color: darkmagenta;
+}
