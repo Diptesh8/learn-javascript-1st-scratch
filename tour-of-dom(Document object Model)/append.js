@@ -48,4 +48,4 @@ sectionDress.innerHTML=`
 <li>hoddy</li>
 </ul>
 `
-mainContainer.appendChild(sectionDress)
+mainContainer.appendChild(sectionDress);

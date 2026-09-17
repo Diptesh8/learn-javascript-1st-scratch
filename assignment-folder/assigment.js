@@ -71,8 +71,3 @@ return makePassword;
 const out=password({ name:"dip",birthYear:2090,siteName:"google"});
 console.log(out);
 
-// problem5:= Monthly Savings of a Freelancer using function and return keyword---------------------
-
-function monthlySavings(){
-    
-}
