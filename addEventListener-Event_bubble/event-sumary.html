@@ -8,6 +8,10 @@
 <body>
     <h1>Final dom event handelers</h1>
     <h3 id="handStatus">Default text</h3>
+    <p>Input text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br><br>
     <button onclick="handleOnClick()">Add onclick function</button>
     <button id="button2">Handle new button</button>
     <script>
@@ -20,6 +24,12 @@
         document.getElementById('button2').addEventListener('click',function(){
             const handel = document.getElementById('handler-status');
             handel.innerText ='text updated by add event listener button'
+        })
+
+        // option-2 recape----------
+        document.getElementById('btn-update').addEventListener('click',function(){
+            const inputField = document.getElementById('input-field');
+            console.log(inputField)
         })
     </script>
 </body>
