@@ -7,11 +7,20 @@
 </head>
 <body>
     <h1>Final dom event handelers</h1>
+    <h3 id="handStatus">Default text</h3>
     <button onclick="handleOnClick()">Add onclick function</button>
+    <button id="button2">Handle new button</button>
     <script>
         function handleOnClick(){
+            const handel = document.getElementById('handStatus');
+            handel.innerText ='Handled by function attached on clicked attribute'
             console.log('button clicked')
         }
+        // option-2
+        document.getElementById('button2').addEventListener('click',function(){
+            const handel = document.getElementById('handler-status');
+            handel.innerText ='text updated by add event listener button'
+        })
     </script>
 </body>
 </html>
