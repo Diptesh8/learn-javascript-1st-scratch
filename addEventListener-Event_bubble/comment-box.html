@@ -28,6 +28,16 @@
     const commentBox =document.getElementById('new-comment')
     const newComment = commentBox.value;
     console.log(newComment)
+    
+    // step-3:-set the comment inside the comment container-------
+const commentContainer =document.getElementById('comment-container');
+const p =document.createElement('p');
+p.innerText =newComment;
+commentContainer.appendChild(p);
+
+// step4:- clear the textarea---------
+commentBox.value='';
+
    })
 </script>
     
