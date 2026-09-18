@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document Object Model</title>
 </head>
 <body>
+    <h1>Add your comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ducimus illo omnis, doloribus dolor quod eaque rem, minus repudiandae veniam vel! Totam optio quibusdam provident nobis distinctio fugiat similique? In assumenda sit quia officiis architecto deleniti praesentium ad aliquam fugiat sequi, natus repellat quibusdam distinctio, eaque saepe consequuntur! Assumenda, culpa?</p>
+
+        <p>Deleniti laudantium sit saepe tempore enim corporis necessitatibus minus reprehenderit. Suscipit tenetur omnis quae optio consequuntur, non quas dignissimos qui voluptate soluta. Sit nisi saepe nihil eius a atque, doloremque voluptate error beatae corporis? Vel, sunt unde cumque voluptatem dicta, nam eveniet aliquam debitis ea exercitationem voluptatum iusto, dolorem vitae!</p>
+
+        <p>Ea cumque quisquam, molestiae in voluptatum reprehenderit expedita dolorum, nobis dolorem ipsam a assumenda sapiente, doloremque aspernatur. Illum odit consectetur quia blanditiis! Sed officia libero voluptatibus commodi, unde amet cumque aut voluptatem natus vel beatae sunt nesciunt mollitia ad voluptates perspiciatis officiis voluptas aperiam laborum et esse nam ullam reiciendis?</p>
+        
+    </div>
+    <div>
+       <textarea name="" id="new-comment" cols="60" rows="5"></textarea> 
+       <br>
+       <button id="btn-post">post</button>
+    </div>
+<script>
+    //step1= add event listner done-----------
+    const button = document.getElementById('btn-post')
+   button.addEventListener('click',function(){
+    // step2 :- get the comment inside the textarea
+    const commentBox =document.getElementById('new-comment')
+    const newComment = commentBox.value;
+    console.log(newComment)
+   })
+</script>
     
 </body>
 </html>
